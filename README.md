@@ -1,5 +1,25 @@
 # PoorDS4
 
+> [!NOTE]
+> **This is a fork of [ItsBlurf/PoorDS4](https://github.com/ItsBlurf/PoorDS4)** that adds
+> support for apps built with the PS5 payload SDK, such as
+> [ProsperoEden](https://github.com/blackbearreloaded/ProsperoEden), and fixes mixed
+> DualSense + DS4 multiplayer. It carries three changes that are open as pull requests
+> upstream:
+>
+> - [#37](https://github.com/ItsBlurf/PoorDS4/pull/37) (by freekvlier): hook `-fno-plt`
+>   GOT imports, so PoorDS4 works in SDK-built apps such as ProsperoEden.
+> - [#41](https://github.com/ItsBlurf/PoorDS4/pull/41): native DualSense players keep
+>   their own input when a DS4 is in the game (the DS4 no longer mirrors to them).
+> - [#42](https://github.com/ItsBlurf/PoorDS4/pull/42): a second, third and fourth DS4
+>   each reach their own player.
+>
+> Tested on firmware 13.60 with ProsperoEden and 2 DualSense + 2 DS4 (four players).
+> Builds are on the [Releases](https://github.com/rpromas/PoorDS4/releases) page.
+> Report problems with these builds [here](https://github.com/rpromas/PoorDS4/issues),
+> not upstream. This fork is temporary: once upstream merges the pull requests, use
+> [ItsBlurf/PoorDS4](https://github.com/ItsBlurf/PoorDS4) again.
+
 > PoorDS4 would not have been possible without the excellent work behind
 > [Ghostcontrol](https://github.com/StonedModder/Ghostcontrol-PS5-USB-Controller-Patcher)
 > by StonedModder. Its controller research and PS5 payload foundation made this
